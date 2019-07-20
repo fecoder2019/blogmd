@@ -4,6 +4,7 @@ var spawn = require('child_process').spawn
 // var createHandler = require('github-webhook-handler')
 // var handler = createHandler({ path: '/pushCode', secret: 'xxx' }) // 根据git上webhook的配置填写
 http.createServer(function (req, res) {
+  console.log('listening 7777')
     // handler(req, res, function (err) {
     //     res.statusCode = 404;
     //     res.end('no such location')
