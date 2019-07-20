@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "child_process": "^1.0.2",
     "github-webhook-handler": "^0.7.1"
   }
 }

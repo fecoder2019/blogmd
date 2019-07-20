@@ -31,19 +31,19 @@ function rumCommand( cmd, args, cwd, callback ) {
     child.stdout.on('end', function(){ callback( response ) })
 }
 
-function init() {
-    rumCommand('sh', ['../clean.sh'], './' ,function( result ) { // 清理缓存
-        console.log(result)
-    })
+// function init() {
+//     rumCommand('sh', ['../clean.sh'], './' ,function( result ) { // 清理缓存
+//         console.log(result)
+//     })
+//
+//     rumCommand('sh', ['../server/autoServer.sh'], '../server' ,function( result ) { // cLient端更新
+//         console.log(result)
+//     })
+//
+//     rumCommand('sh', ['../client/autoClient.sh'], '../client' ,function( result ) { // server端更新
+//         console.log(result)
+//     })
+//
+// }
 
-    rumCommand('sh', ['../server/autoServer.sh'], '../server' ,function( result ) { // cLient端更新
-        console.log(result)
-    })
-
-    rumCommand('sh', ['../client/autoClient.sh'], '../client' ,function( result ) { // server端更新
-        console.log(result)
-    })
-
-}
-
-init() // 脚本运行第一次默认指向一次
+// init() // 脚本运行第一次默认指向一次
